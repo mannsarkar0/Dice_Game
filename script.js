@@ -9,8 +9,8 @@ function dice() {
 function show() {
   let result = dice();
 
-  let diceImage1 = "/images/dice" + result[0] + ".png";
-  let diceImage2 = "/images/dice" + result[1] + ".png";
+  let diceImage1 = "images/dice" + result[0] + ".png";
+  let diceImage2 = "images/dice" + result[1] + ".png";
 
   // Image src set करना
   document.getElementById("dice1").setAttribute("src", diceImage1);
