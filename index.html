@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dice Game</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>🚩 Dice Game 🚩</h1>
+
+    <h2>Click the button below. Higher number will win.</h2>
+    <div class="dice-container">
+      <div id="box1">
+        <img
+          id="dice1"
+          src="/images/dice6.png"
+          width="250px"
+          alt="dice image"
+        />
+        <h3>Player 1</h3>
+      </div>
+
+      <button id="btn" type="button" onclick="show()">Shuffle</button>
+
+      <div id="box2">
+        <img
+          id="dice2"
+          src="/images/dice6.png"
+          width="250px"
+          alt="dice image"
+        />
+        <h3>Player 2</h3>
+      </div>
+    </div>
+    <div id="text"></div>
+    <script src="script.js"></script>
+  </body>
+</html>

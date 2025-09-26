@@ -1,0 +1,83 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+} /* Body styling */
+body {
+  background: linear-gradient(135deg, #38012f, #a9c3e0);
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+} /* Title */
+h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.573);
+} /* Instructions */
+h2 {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+}
+
+/* Dice containers */
+.dice-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+#box1,
+#box2 {
+  margin: 20px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.146);
+  border-radius: 15px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.5s ease;
+}
+#box1:hover,
+#box2:hover {
+  transform: scale(1.05);
+}
+/* Dice image */
+#box1 img,
+#box2 img {
+  transition: transform 0.5s ease;
+}
+#box1 img:hover,
+#box2 img:hover {
+  transform: rotate(10deg) scale(1.1);
+} /* Player name */
+h3 {
+  margin-top: 15px;
+  font-size: 1.2rem;
+  font-weight: bold;
+} /* Button styling */
+button {
+  background: #f89d8d;
+  color: #fff;
+  border: none;
+  padding: 12px 25px;
+  margin-top: 15px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: transform 0.5s ease;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+button:hover {
+  background: #ff6741;
+  transform: scale(1.05);
+} /* Result text */
+#text {
+  margin-top: 30px;
+  font-size: 2rem;
+  font-weight: bold;
+}
